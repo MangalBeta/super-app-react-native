@@ -1,0 +1,26 @@
+{
+  "name": "salesapp",
+  "license": "MIT",
+  "packageManager": "yarn@3.6.4",
+  "private": true,
+  "workspaces": [
+    "salespackage/*"
+  ],
+  "scripts": {
+    "bootstrap": "yarn && yarn workspaces foreach run bootstrap",
+    "start": "concurrently -P 'yarn:start:*(!standalone) {1}'",
+    "start:host-app": "yarn workspace salessuperapp run start",
+    "start:mini-app": "yarn workspace salessappone run start",
+    "run:host-app:ios": "yarn workspace salessuperapp run ios",
+    "run:host-app:android": "yarn workspace salessuperapp run android",
+    "run:mini-app:ios": "yarn workspace salessappone run ios",
+    "run:mini-app:android": "yarn workspace salessappone run android",
+    "clean": "find ./ -type d -name 'node_modules' -exec rm -rf '{}' +"
+  },
+  "peerDependencies": {
+    "react-native": "0.74.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
