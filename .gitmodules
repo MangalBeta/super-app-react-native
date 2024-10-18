@@ -5,4 +5,4 @@
 
 [submodule "salespackage/salessuperapp"]
     path = salespackage/salessuperapp
-    url = https://github.com/MangalBeta/super-app-react-native
+    url = https://github.com/MangalBeta/super-app-react-native.git
