@@ -9,8 +9,7 @@ node_modules
 !node_modules/.yarn-state.yml
 
 /*.tgz
-/salespackage/salessappone/node_modules
-/salespackage/salessuperapp/node_modules
+
 
 
 
