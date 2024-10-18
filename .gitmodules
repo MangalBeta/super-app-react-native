@@ -1,0 +1,8 @@
+[submodule "salespackage/salessappone"]
+    path = salespackage/salessappone
+    url = https://github.com/MangalBeta/super-app-one-reactnative.git
+
+
+[submodule "salespackage/salessuperapp"]
+    path = salespackage/salessuperapp
+    url = https://github.com/MangalBeta/super-app-react-native
